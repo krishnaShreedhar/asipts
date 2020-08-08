@@ -1,3 +1,10 @@
+"""
+sudo apt-get update
+sudo apt-get install python-qrtools
+
+pip install pyqrcode pypng zbar pillow
+"""
+
 import pyqrcode
 import os
 import png
@@ -21,6 +28,26 @@ def gen_qr_code_ticket(source, destination, **kwargs):
     # Create and save the png file naming "myqr.png"
     png_file_path = os.path.join(dirm.get_dir_tickets(), 'first_ticket.png')
     url.png(png_file_path, scale=6)
+
+
+# def read_qr_code_ticket(file_path):
+#     from qrtools import QR
+#
+#     # creates the QR object
+#     my_QR = QR(data=[u"geeksforgeeks", u"https://www.geeksforgeeks.org/"],
+#                data_type='bookmark')
+#
+#     # encodes to a QR code
+#     my_QR.encode()
+#     from qrtools import QR
+#     my_QR = QR(filename="home/user/Desktop/qr.png")
+#
+#     # decodes the QR code and returns True if successful
+#     my_QR.decode()
+#
+#     # prints the data
+#     print
+#     my_QR.data
 
 
 def setup():
