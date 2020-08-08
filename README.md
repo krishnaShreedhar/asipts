@@ -31,4 +31,8 @@ I have been thinking of this from a long long time and I may now have skills to 
     2. Should work offline
     3. Track user actions without privacy impact
     4. Preventive system
+5. Self-ticketing system
+    1. Online ticketing and payments
+    2. Individuals can get the ticket online 
+    3. QR code scanner for travel details
     
