@@ -3,10 +3,10 @@ import json
 
 class TicketGenerator:
 
-    def __init__(self, source, destination, start_time, **kwargs):
+    def __init__(self, source, destination, **kwargs):
         self.source = source
         self.destination = destination
-        self.start_time = start_time
+        self.start_time = kwargs.get('start_time', None)
         self.end_time = kwargs.get('end_time', None)
         self.max_hops = kwargs.get('max_hops', 9999)
         self.max_cost = kwargs.get('max_cost', 9999)
