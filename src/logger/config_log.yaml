@@ -1,0 +1,53 @@
+version: 1
+
+formatters:
+  simple:
+    format: '%(asctime)s | %(filename)20s:%(lineno)-4s | %(levelname)8s | %(message)s'
+    datefmt: '%m-%d %H:%M:%S'
+
+  precise:
+    format: '%(asctime)s | %(name)10s | %(filename)20s:%(lineno)-4s | %(levelname)8s | %(message)s'
+    datefmt: '%Y-%m-%d %H:%M:%S'
+
+handlers:
+  # Different types of handlers
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: simple
+    stream: ext://sys.stdout
+
+  out_file:
+    class: logging.handlers.RotatingFileHandler
+    formatter: precise
+    maxBytes: 100000000   # 100 MB
+    backupCount: 10
+    mode: 'w'
+    encoding: 'utf-8'
+    delay: False
+    level: DEBUG
+
+loggers:
+  core:
+    level: DEBUG
+    handlers:
+      - console
+      - out_file
+    propagate: no
+  log:
+    level: DEBUG
+    handlers: [ console ]
+    propagate: no
+  utils:
+    level: INFO
+    handlers: [ out_file ]
+    propagate: no
+
+root:
+  level: DEBUG
+  handlers: [ console ]
+
+extra:
+  use_timestamp: False
+  prefix: '../logs/app_logs'
+  str_ts_fmt: '_%Y%m%d' # '_%Y%m%d_%H%M%S'

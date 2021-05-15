@@ -1,1 +1,8 @@
 /data/tickets/
+*.pyc
+.DS_Store
+.idea/asipts.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
