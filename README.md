@@ -1,15 +1,17 @@
 # Artificial Super Intelligent Public Transport System (ASIPTS)
 
+How about a fully managed system can take over all the burden of your travel planning for important client meetings, business engagements, important family ceremonies and help you reach on time and without any hassle?
 I have been thinking of this from a long long time and I may now have skills to finally give it a good shape.
 
 
 ### Motivation
-1. Promote public transport
-2. Reduce private vehicular traffic
-3. Environmental benefits
-4. Time benefits for individuals
-5. Cost-effective
-6. Exponentially increased efficiency
+1. Fully Managed Travel Planning (FMTP)
+2. Promote public transport
+3. Reduce private vehicular traffic
+4. Environmental benefits
+5. Time benefits for individuals
+6. Cost-effective
+7. Exponentially increased efficiency
 
 
 ### Features
